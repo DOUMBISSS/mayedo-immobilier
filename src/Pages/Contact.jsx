@@ -14,15 +14,15 @@ function Contact () {
             <div className="main--contact--content">
                 <div className="main--contact--content--left">
                   <form>
-                    <div class="mb-3">
+                    <div className="mb-3">
                       <label for="exampleInputEmail1" className="form-label">Noms complets</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                      <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                     </div>
-                    <div class="mb-3">
+                    <div className="mb-3">
                       <label for="exampleFormControlInput1" className="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+                      <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
                     </div>
-                    <div class="mb-3">
+                    <div className="mb-3">
                       <label for="exampleFormControlInput1" className="form-label">Numéro de téléphone</label>
                       <input type="number" className="form-control" id="exampleFormControlInput1" placeholder=""/>
                     </div>

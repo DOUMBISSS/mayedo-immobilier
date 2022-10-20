@@ -14,7 +14,7 @@ export default function Project (){
                                 </div> */}
                                 <div className="project--pictures--box">
                                     {/* <img src="https://www.addoha.ci/images/projects/cite-des-orchidees-1.jpg" alt="" /> */}
-                                    <img src="40.jpg" alt="" />
+                                    <img src={`${process.env.REACT_APP_DOMAIN}40.jpg`} alt="" />
                                 </div>
                         </div>
                     </div>

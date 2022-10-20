@@ -12,8 +12,8 @@ function details () {
         <div className="container--header">
             <h2>Achat</h2>
           </div>
-          {/* <div class="contacts">
-            <i class="fa-solid fa-message"></i>
+          {/* <div className="contacts">
+            <i className="fa-solid fa-message"></i>
           </div> */}
           {/* <div className="card--contact">
               <div className="btn--close--card--contacts">

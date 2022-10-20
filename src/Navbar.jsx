@@ -1,14 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function Navbar ({setDisplay,display}) {
+function Navbar ({setDisplay}) {
             
   const afficher = () => {
     setDisplay(true)
   }
-  // const affi = ()=>{
-  //   setDisplay(false)
-  // }
 
     return (
       <div>
@@ -16,7 +13,7 @@ function Navbar ({setDisplay,display}) {
         <nav>
           <div className="navbar--left">
             <div className="navbar--logo">
-              <Link to="/"> <img src="27.png" alt=""/></Link>
+              <Link to="/"> <img src={`${process.env.REACT_APP_DOMAIN}27.png`} alt=""/></Link>
             </div>
           </div>
           <div className="navbar--right">
@@ -31,10 +28,10 @@ function Navbar ({setDisplay,display}) {
                 <input className="form-control me-2" type="text" placeholder="Search" />
               </form>
             </div>
-               <div className={display ? "sidebar show--sidebar " :'sidebar'}></div>
+               
                     <div className='icons'>
                       <div className='icon--menu' onClick={afficher}>
-                          <i class="fa-solid fa-bars"></i>
+                          <i className="fa-solid fa-bars"></i>
                       </div>
                       {/* <div className='icon--search'>
                         <i class="fa-solid fa-magnifying-glass"></i>

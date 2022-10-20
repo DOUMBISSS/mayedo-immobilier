@@ -499,9 +499,9 @@ h6{
   color: white;
   background-color: rgb(12, 52, 103);
 }
-.menu{
+/* .menu{
   display: none;
-}
+} */
 /* .contacts{
   position: fixed;
   width: 50px;
@@ -516,13 +516,13 @@ h6{
   justify-content: center;
   cursor: pointer;
 } */
-.card--contact{
+/* .card--contact{
   position: fixed;
   width: 70%;
   z-index: 10000;
   top: 50px;
   margin: 0 auto;
-  right: 0;
+  right: -1000px;
   left: 0;
   padding: 2rem;
   border-radius: 1rem;
@@ -530,30 +530,30 @@ h6{
   background-color: gainsboro;
   transition: ease-in 0.8s;
   box-shadow: 0px 0px 10px black;
-}
-/* .showCardContact.card--contact{
+} */
+/* .show--CardContact{
   top:40px;
+  right: 0;
   transition: ease-in 0.8s;
 } */
 .sidebar{
   position: fixed;
-  right: -2000px;
+  right:-2000px;
   top: 0;
   width:300px;
   height: 100vh;
   padding: 0.5rem;
   display: flex;
   align-items: center;
-  transition: ease-in-out 1.2s;
+  transition: ease-in-out 1s;
   justify-content: center;
-  background-color:gray;
-  box-shadow: 0px 0px 9px 5px black;
-  z-index: 1000;
-  
+  background-color:white;
+  /* box-shadow: 0px 0px 9px 5px black; */
+  z-index: 10000;
 }
-.show--sidebar{
+.show-sidebar{
   right:0;
-  transition: ease-in 1.2s;
+  transition: ease-in 1s;
   /* transform: translate(-100vw); */
 }
 
@@ -561,11 +561,10 @@ h6{
   width: 90%;
   height: 90%;
   display: block;
-  padding: 2rem;
+  text-align: center ;
   text-decoration: none;
   color: #000;
   font-weight: bold;
-  border: 1px solid coral;
 }
 .sidebar--menu > p{
   padding: 1rem;
