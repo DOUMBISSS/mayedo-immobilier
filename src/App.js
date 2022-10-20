@@ -15,22 +15,22 @@ import Villa from './Pages/Villa';
 // import { uid } from 'uid';
 
 
-function App() {
+export default function App() {
   return (
     <Routes>
     <Route path="/" element={<Home/>}/>
-    {/* <Route path='/details/:id' element={<MovieDetails movies ={movies} setSearchFilter={setSearchFilter}/>} /> */}
+    {/* <Route path='/details/:id' /> */}
     {/* <Route path='/acheter' element={<Acheter/>} /> */}
     {/* <Route path='/vente' element={<Vente/>} /> */}
     <Route path='/louer' element={<Louer/>} />
     <Route path='/contact' element={<Contact/>} />
     <Route path='/propos' element={<Apropos/>} />
-    <Route path='/details' element={<Details/>} />
+    <Route path='/details/:id' element={<Details/>} />
     <Route path='/appartement' element={<Appartement/>} />
     <Route path='/villa' element={<Villa/>} />
     <Route path='/detail' element={<DetailsProject/>} />
+    <Route path='/category/:slug' element={<DetailsProject/>} />
   </Routes>
   );
 }
 
-export default App;

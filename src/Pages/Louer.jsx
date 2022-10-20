@@ -5,7 +5,7 @@ import Navbar from '../Navbar';
 import Filter from './Filter';
 import Footer from './Footer';
 
-function Louer () {
+export default function Louer () {
   const rentHomes = useSelector(state =>state.rentHomeReducer.rentHomes);
     return (
     <div>
@@ -42,5 +42,3 @@ function Louer () {
     </div>
     );
 }
-
-export default Louer;

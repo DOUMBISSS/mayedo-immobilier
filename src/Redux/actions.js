@@ -13,3 +13,10 @@ export function getRentHomes(homes){
         payload: homes
     }
 }
+
+export function getCategoryHome(homes){
+    return {
+        type: 'GET-CATEGORY-HOMES',
+        payload : homes
+    }
+}
