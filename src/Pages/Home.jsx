@@ -8,9 +8,9 @@ import { useState } from 'react';
 import Project from './Project';
 
 
-function Home () {
+export default function Home () {
   const [display, setDisplay] = useState(false);
-  
+
   const homes = useSelector(state =>state.homeReducer.homes);
 
   const affi = ()=>{
@@ -81,7 +81,8 @@ function Home () {
                 Que vous soyez acquéreur ou vendeur, bailleur ou locataire; vous avez un interlocuteur unique pour vous aider à concrétiser votre projet.</p>
           </div>
             <div className="description--enterprise--content--right">
-              <img src={`${process.env.REACT_APP_DOMAIN}17.jpeg`} alt=''/>
+              <img src="17.jpeg" alt="" />
+              {/* <img src={`${process.env.REACT_APP_DOMAIN}17.jpeg`} alt=''/> */}
             </div>
         </div>
         <Project/>
@@ -101,5 +102,3 @@ function Home () {
       </div>
     )
   }
-
-  export default Home;

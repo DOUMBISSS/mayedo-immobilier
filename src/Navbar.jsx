@@ -13,7 +13,7 @@ function Navbar ({setDisplay}) {
         <nav>
           <div className="navbar--left">
             <div className="navbar--logo">
-              <Link to="/"> <img src={`${process.env.REACT_APP_DOMAIN}27.png`} alt=""/></Link>
+              <Link to="/"><img src="27.png"alt=""/></Link>
             </div>
           </div>
           <div className="navbar--right">

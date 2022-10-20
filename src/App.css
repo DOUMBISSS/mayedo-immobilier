@@ -553,7 +553,7 @@ h6{
 }
 .show-sidebar{
   right:0;
-  transition: ease-in 1s;
+  transition: ease-in 1.2s;
   /* transform: translate(-100vw); */
 }
 
