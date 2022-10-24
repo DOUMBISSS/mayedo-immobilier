@@ -1,10 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { useState } from 'react';
 
-function Navbar ({setDisplay}) {
+export default function Navbar () {
+  const [display, setDisplay] = useState(false);
             
   const afficher = () => {
     setDisplay(true)
+  }
+
+  const affi = ()=>{
+    setDisplay(false)
   }
 
     return (
@@ -39,10 +45,21 @@ function Navbar ({setDisplay}) {
                     </div>
           </div>
         </nav>
+        <div className={display ? "sidebar show-sidebar" : "sidebar"}>
+      <div className='sidebar--menu'>
+        <div className='btn--close--sidebar' onClick={affi}>X</div>
+              <p><Link className='liste' to="/">Accueil</Link></p>
+              <p><Link className='liste' to="/louer">Locations</Link></p>
+              <p><Link className='liste' to="/contact">Contacts</Link></p>
+              <p><Link className='liste' to="/propos">A propos</Link></p>
+              <form>
+                <input className="form-control me-2" type="text" placeholder="Search" />
+              </form>
+      </div>
+    </div>
     </header>
 
               </div>
     );
 }
 
-export default Navbar;

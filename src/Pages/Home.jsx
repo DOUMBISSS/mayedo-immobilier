@@ -4,41 +4,21 @@ import Footer from '../Pages/Footer';
 import '../App.css';
 import { useSelector } from 'react-redux';
 import {Link} from 'react-router-dom';
-import { useState } from 'react';
 import Project from './Project';
 
 
 export default function Home () {
-  const [display, setDisplay] = useState(false);
-
   const homes = useSelector(state =>state.homeReducer.homes);
-
-  const affi = ()=>{
-    setDisplay(false)
-  }
 
     return (
         <div>
-        <Navbar display={display} setDisplay={setDisplay}/>
+        <Navbar/>
         <div>
          <div className="main--part">
             <div className="slogan">
               <h1>TROUVEZ VOTRE BIEN IMMOBILIER</h1>
               <p>La référence de l'immobilier</p>
             </div>
-    </div>
-
-    <div className={display ? "sidebar show-sidebar" : "sidebar"}>
-      <div className='sidebar--menu'>
-        <div className='btn--close--sidebar' onClick={affi}>X</div>
-              <p><Link className='liste' to="/">Accueil</Link></p>
-              <p><Link className='liste' to="/louer">Locations</Link></p>
-              <p><Link className='liste' to="/contact">Contacts</Link></p>
-              <p><Link className='liste' to="/propos">A propos</Link></p>
-              <form>
-                <input className="form-control me-2" type="text" placeholder="Search" />
-              </form>
-      </div>
     </div>
    
         <div className="container">
