@@ -11,7 +11,7 @@ const initialState = {
             {   name: 'Belle Villa Meublée de 6 Pièces',
                 project:'Riviera Golf 4',
                 description: 'Belle villa meublée haut standing située à Songon  Riviera Golf 4  à proximité du lycée Blaise Pascal,',
-                prices :'5500000',
+                prices :'7500000',
                 img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-13-at-11.44.48-525x328.jpeg",
                 id:2,
             },
@@ -19,7 +19,7 @@ const initialState = {
             {   name: 'Belle Villa Meublée de 6 Pièces',
                 project:'Riviera Golf 4',
                 description: 'Belle villa meublée haut standing située à Songon  Riviera Golf 4  à proximité du lycée Blaise Pascal,',
-                prices :'2000000',
+                prices :'2050000',
                 img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-06-22-at-15.48.25-525x328.jpeg",
                 id:3,
             }

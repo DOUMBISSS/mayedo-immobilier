@@ -9,8 +9,8 @@ import Apropos from './Pages/Apropos';
 import Details from './Pages/Details';
 import 'animate.css';
 import DetailsProject from './Pages/DetailsProject';
-import Appartement from './Pages/Appartement';
-import Villa from './Pages/Villa';
+// import Appartement from './Pages/Appartement';
+// import Villa from './Pages/Villa';
 
 // import { uid } from 'uid';
 
@@ -26,10 +26,10 @@ export default function App() {
     <Route path='/contact' element={<Contact/>} />
     <Route path='/propos' element={<Apropos/>} />
     <Route path='/details/:id' element={<Details/>} />
-    <Route path='/appartement' element={<Appartement/>} />
-    <Route path='/villa' element={<Villa/>} />
+    {/* <Route path='/appartement' element={<Appartement/>} />
+    <Route path='/villa' element={<Villa/>} /> */}
     <Route path='/detail' element={<DetailsProject/>} />
-    <Route path='/category/:slug' element={<DetailsProject/>} />
+    {/* <Route path='/category/:slug' element={<DetailsProject/>} /> */}
   </Routes>
   );
 }
