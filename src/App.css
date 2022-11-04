@@ -973,7 +973,7 @@ h5{
 }
 
 }
-@media only screen and (min-width:576px) and (max-width:768px){
+@media only screen and (min-width:576px) and (max-width:766px){
 
   .main--part{
     height:70vh;
@@ -1015,7 +1015,7 @@ h5{
 }
 .cards{
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 .description--enterprise{
   width: 100%;
