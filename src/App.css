@@ -992,18 +992,6 @@ h5{
     width: 70%;
     justify-content: end;
   }
-  /* .menu{
-    display: flex;
-  }
-  .menu:hover{
-    color: coral;
-    cursor: pointer;
-  } */
-  /* .sidebar{
-    display: block;
-    right: -1000px;
-    width: 50%;
-  } */
   .slogan{
     top: 30%;
   }
@@ -1106,6 +1094,133 @@ h5{
 }
 .container--home--right--part{
   width: 100%;
+}
+footer{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  font-size: 0.8rem;
+}
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+  .navbar--right--content{
+    display: flex;
+  }
+  .slogan{
+    top: 30%;
+  }
+  .slogan > p{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1.5rem;
+    color: #d8a765;
+  }
+  h3{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+ .container{
+  padding: 0;
+}
+.row{
+ display: block;
+}
+.cards{
+  width: 60%;
+  padding: 10px;
+}
+.description--enterprise{
+  width: 100%;
+  padding: 2rem;
+  display: block;
+  background-color: rgb(245, 240, 240);
+}
+.description--enterprise--content--left{
+  width: 100%;
+  padding:0;
+}
+.description--enterprise--content--right{
+  width: 100%;
+}
+.question--part{
+  height: 70vh;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+.question--part--content{
+  padding: 0;
+}
+.main--contact{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.main--contact--content{
+  width: 100%;
+  height: 90%;
+  display: block;
+}
+.main--contact--content--right{
+  width: 100%;
+}
+.main--contact--content--left{
+  width: 100%;
+}
+.container--home{
+  display: block;
+}
+.container--home--left--part{
+  width: 100%;
+}
+.container--home--left--part--content{
+  width: 95%;
+  height: 95%;
+}
+.container--home--left--part--content--image{
+  width: 100%;
+}
+.container--home--left--part--content--image--box{
+  width: 300px;
+  height: 300px;
+}
+.container--home--left--part--content--image--box img{
+  width: 100%;
+  height: 100%;
+}
+.container--home--left--part--content--images{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.images--thumbails{
+  width: 22%;
+}
+.images--thumbails--box{
+  width: 70px;
+  height: 70px;
+}
+.container--home--right--part{
+  width: 100%;
+}
+.main--part--project{
+  height: 70vh;
+  padding: 1rem ;
+  display: block;
+}
+.project--pictures{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer{
   width: 100%;
