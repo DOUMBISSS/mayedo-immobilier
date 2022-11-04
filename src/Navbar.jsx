@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 export default function Navbar () {
   const [display, setDisplay] = useState(false);
+  // const [searchHome,setSearchHome] = useState()
             
   const afficher = () => {
     setDisplay(true)
@@ -32,15 +33,14 @@ export default function Navbar () {
                 <input className="form-control me-2" type="text" placeholder="Search" />
               </form>
             </div>
-               
-                    <div className='icons'>
+                 <div className='icons'>
                       <div className='icon--menu' onClick={afficher}>
                           <i className="fa-solid fa-bars"></i>
                       </div>
                       {/* <div className='icon--search'>
                         <i class="fa-solid fa-magnifying-glass"></i>
                       </div> */}
-                    </div>
+                  </div>
           </div>
         </nav>
         <div className={display ? "sidebar show-sidebar" : "sidebar"}>
@@ -56,8 +56,7 @@ export default function Navbar () {
       </div>
     </div>
     </header>
-
-              </div>
+  </div>
     );
 }
 

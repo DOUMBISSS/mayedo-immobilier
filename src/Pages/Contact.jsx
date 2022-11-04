@@ -53,7 +53,7 @@ function Contact () {
                     </div>
                     <div className="mb-3">
                       <label for="exampleFormControlInput1" className="form-label">Numéro de téléphone</label>
-                      <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="" value={number} onChange={(e) => setNumber(e.target.value)}/>
+                      <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Numero de telephone" value={number} onChange={(e) => setNumber(e.target.value)}/>
                     </div>
                     <div className="mb-3">
                       <label for="exampleFormControlTextarea1" className="form-label">Votre message</label>

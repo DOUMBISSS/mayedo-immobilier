@@ -6,6 +6,9 @@ const initialState = {
                 prices :'5500000',
                 img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
                 id:1,
+                // images:["https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                //         "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-13-at-11.44.48-525x328.jpeg",
+                //         ]
             },
         
             {   name: 'Belle Villa Meublée de 6 Pièces',

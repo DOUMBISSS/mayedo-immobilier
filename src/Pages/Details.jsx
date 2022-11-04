@@ -25,7 +25,7 @@ export default function Details () {
           </div>
               <div className="container--home">
                 <div className="container--home--left--part">
-                  <div className="container--home--left--part--content">
+                  {/* <div className="container--home--left--part--content">
                     <div className="container--home--left--part--content--image">  
                       <div className="container--home--left--part--content--image--box">
                       <img src={home.img} alt=""/>
@@ -54,6 +54,54 @@ export default function Details () {
                           </div>
                         </div>
                     </div> 
+                  </div>  */}
+                  <div className="container--home--left--part--content">
+                    <div className="container--home--left--part--content--image">  
+                    <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
+                        <div className="carousel-inner">
+                          <div className="carousel-item active">
+                            <img src={home.img} className="d-block w-100" alt="..."/>
+                          </div>
+                          <div className="carousel-item">
+                            <img src={home.img} className="d-block w-100" alt="..."/>
+                          </div>
+                          <div className="carousel-item">
+                            <img src={home.img} className="d-block w-100" alt="..."/>
+                          </div>
+                        </div>
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span className="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div> 
+                    {/* <div className="container--home--left--part--content--images">
+                        <div className="images--thumbails">
+                          <div className="images--thumbails--box">
+                        <img src={home.img} alt=""/>
+                            
+                          </div>
+                      </div>
+                        <div className="images--thumbails">
+                          <div className="images--thumbails--box">
+                          <img src={home.img} alt=""/>
+                          </div>
+                        </div>
+                        <div className="images--thumbails">
+                          <div className="images--thumbails--box">
+                          <img src={home.img} alt=""/>
+                          </div>
+                        </div>
+                        <div className="images--thumbails">
+                          <div className="images--thumbails--box">
+                          <img src={home.img} alt=""/>
+                          </div>
+                        </div>
+                    </div>  */}
                   </div> 
                 
                 </div>
