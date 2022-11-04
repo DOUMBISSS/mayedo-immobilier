@@ -1146,7 +1146,7 @@ footer{
   width: 100%;
 }
 .question--part{
-  height: 70vh;
+  height: 40vh;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1213,7 +1213,7 @@ footer{
 .main--part--project{
   height: 70vh;
   padding: 1rem ;
-  display: block;
+  display: flex;
 }
 .project--pictures{
   width: 100%;
