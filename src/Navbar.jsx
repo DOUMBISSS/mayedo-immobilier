@@ -25,8 +25,6 @@ export default function Navbar () {
           <div className="navbar--right">
             <div className="navbar--right--content">
               <Link className='liste' to="/">Accueil</Link>
-              {/* <Link className='liste' to="/vente">Vente</Link> */}
-              {/* <Link className='liste' to="/acheter">Acheter</Link> */}
               <Link className='liste' to="/louer">Locations</Link>
               <Link className='liste' to="/contact">Contacts</Link>
               <Link className='liste' to="/propos">A propos</Link>
