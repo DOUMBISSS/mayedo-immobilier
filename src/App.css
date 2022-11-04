@@ -222,7 +222,7 @@ p{
 
 .footer{
   width: 100%;
-  padding: 10px 200px;
+  padding: 10px 170px;
   /* background-color:rgb(12, 52, 103); */
   color: rgb(12, 52, 103);
   font-weight: bold;
@@ -251,8 +251,13 @@ p{
 }
 .social--media{
   height: 200px;
-  /* border: 1px solid coral; */
   text-align: center;
+  cursor: pointer;
+}
+.social--media i{
+  padding-top: 0.3rem ;
+  padding-right: 0.3rem;
+  font-size: 1.3rem;
 }
 .name--developer{
   width: 100%;
