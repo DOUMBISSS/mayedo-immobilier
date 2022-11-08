@@ -1,6 +1,6 @@
 const initialState = {
     rentHomes: [
-                {   name: 'Belle Villa Meublée de 6 Pièces ',
+                {name: 'Belle Villa Meublée de 6 Pièces ',
                 project:'Riviera Golf 4',
                 description: 'Belle villa meublée haut standing située à Songon  Riviera Golf 4  à proximité du lycée Blaise Pascal,',
                 prices :'5500000',

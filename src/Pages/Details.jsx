@@ -7,13 +7,13 @@ import { getHomes } from '../Redux/actions';
 
 export default function Details () {
 
-  const renthomes = useSelector(state => state.rentHomeReducer.homes);
+  const rentHomes = useSelector(state => state.rentHomeReducer.rentHomes);
   const dispatch = useDispatch();
 
   let id = useParams().id;
-  let renthome =renthomes.find(renthomes => renthome.id == id);
+  let rentHome =rentHomes.find(rentHome => rentHome.id == id);
 
-  dispatch (getHomes(renthome))
+  dispatch (getHomes(rentHomes))
 
             
     return (
@@ -60,13 +60,13 @@ export default function Details () {
                     <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
                         <div className="carousel-inner">
                           <div className="carousel-item active">
-                            <img src={renthome.img} className="d-block w-100" alt="..."/>
+                            <img src={rentHome.img} className="d-block w-100" alt="..."/>
                           </div>
                           <div className="carousel-item">
-                            <img src={renthome.img} className="d-block w-100" alt="..."/>
+                            <img src={rentHome.img} className="d-block w-100" alt="..."/>
                           </div>
                           <div className="carousel-item">
-                            <img src={renthome.img} className="d-block w-100" alt="..."/>
+                            <img src={rentHome.img} className="d-block w-100" alt="..."/>
                           </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
@@ -108,9 +108,9 @@ export default function Details () {
                 <div className="container--home--right--part">
                   <div className="container--home--right--part--content">
                     <div className="container--home--left--part--content--header">
-                      <p className="project">{renthome.project}</p>
-                      <p className="name--project">{renthome.name} </p>
-                      <p className="home--descrption">{renthome.description}</p>
+                      <p className="project">{rentHome.project}</p>
+                      <p className="name--project">{rentHome.name} </p>
+                      <p className="home--descrption">{rentHome.description}</p>
                     </div>
                     <div className="container--home--left--part--content--description">
                       <div className="description--property">
@@ -122,7 +122,7 @@ export default function Details () {
                         <p>– séjour staffé </p>
                         <p>– cuisine européenne </p>
                         <p>- immense terrasse et immense cour</p>
-                        <p className="home--price"> à partir de <span>{renthome.prices} FCFA/mois</span></p>                
+                        <p className="home--price"> à partir de <span>{rentHome.prices} FCFA/mois</span></p>                
                       </div>
                         <div className="button--block">
                           <Link to="/contact"><button className="btn--buy">Nous contacter</button></Link>
