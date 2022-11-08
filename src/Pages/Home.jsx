@@ -35,7 +35,7 @@ export default function Home () {
                       <div className="cards--box--content">
                           <p className="project">{home.project}</p>
                           <p className="name--project">{home.name}</p>
-                          <p className="project--descrption">{home.description}</p>
+                          <p className="project--descrption">{home.addresse}</p>
                           <p className="home--price"> à partir de <span>{home.prices} FCFA/mois</span></p>
                        <Link to={`/details/${home.id}`}><button className="more--details">Voir l'annonce</button></Link>
                       </div>
