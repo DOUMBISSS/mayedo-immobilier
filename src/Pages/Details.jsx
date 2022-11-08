@@ -21,7 +21,7 @@ export default function Details () {
         <Navbar/>
         <div className='container'>
         <div className="container--header">
-            <h2>Achat</h2>
+            <h2>{rentHome.name}</h2>
           </div>
               <div className="container--home">
                 <div className="container--home--left--part">
@@ -109,13 +109,13 @@ export default function Details () {
                   <div className="container--home--right--part--content">
                     <div className="container--home--left--part--content--header">
                       <p className="project">{rentHome.project}</p>
-                      <p className="name--project">{rentHome.name} </p>
-                      <p className="home--descrption">{rentHome.description}</p>
+                      <p className="name--project">{rentHome.name}</p>
+                      <p className="home--descrption">{rentHome.addresse}</p>
                     </div>
                     <div className="container--home--left--part--content--description">
                       <div className="description--property">
                         <h6>Description</h6>
-                        <p>Superbe penthouse de 3 pièces à Riviera mondial béton avec vue sur la lagune :</p>
+                        <p>Superbe penthouse de 3 pièces à Riviera mondial béton avec vue sur la lagune </p>
                         <p>- chambre principale autonome </p>
                         <p>– salle d’eau extérieure à la seconde chambre</p>
                         <p>– toilette visiteur </p>
