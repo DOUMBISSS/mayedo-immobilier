@@ -21,7 +21,8 @@ export default function Details () {
         <Navbar/>
         <div className='container'>
         <div className="container--header">
-            <h2>{rentHome.name}</h2>
+            {/* <h2>{rentHome.name}</h2> */}
+            <p className="name--project">{rentHome.name}</p>
           </div>
               <div className="container--home">
                 <div className="container--home--left--part">
@@ -109,7 +110,7 @@ export default function Details () {
                   <div className="container--home--right--part--content">
                     <div className="container--home--left--part--content--header">
                       <p className="project">{rentHome.project}</p>
-                      <p className="name--project">{rentHome.name}</p>
+                      {/* <p className="name--project">{rentHome.name}</p> */}
                       <p className="home--descrption">{rentHome.addresse}</p>
                     </div>
                     <div className="container--home--left--part--content--description">
