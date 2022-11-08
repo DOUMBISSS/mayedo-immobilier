@@ -18,12 +18,6 @@ header{
   align-items: center;
   justify-content: center;
   background-color: white;
-  /* border-bottom: 2px solid gainsboro; */
-  /* box-shadow: 0 0 5px black; */
-  /* border: 3px solid coral; */
-  /* position: fixed;
-  top: 0;
-  z-index: 1000; */
 }
 nav{
   width: 90%;
@@ -132,7 +126,6 @@ p{
   font-size: 1.2rem;
   font-weight: bold;
   color: coral;
-  /* color: #d8a765; */
 }
 .name--project{
   font-size: 1.5rem;
@@ -191,12 +184,10 @@ p{
   width: 100%;
   display: flex;
   background-color: rgb(238, 236, 236);
-  /* background-color: gainsboro; */
   animation:fadeInLeft 2s linear;
 }
 .description--enterprise--content--left{
   width: 60%;
-  /* text-align: center; */
   padding: 1rem;
 }
 .description--enterprise--content--left > p{
@@ -215,7 +206,6 @@ p{
   border-radius: 10px;
 }
 .name--enterprise{
-  /* color:#d8a765; */
   color: coral;
   font-weight: bold;
 }
@@ -241,12 +231,10 @@ p{
 }
 .schedule{
   height: 200px;
-  /* border: 1px solid coral; */
   text-align: center;
 }
 .address{
   height: 200px;
-  /* border: 1px solid coral; */
   text-align: center;
 }
 .social--media{
