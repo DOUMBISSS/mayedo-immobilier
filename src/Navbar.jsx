@@ -20,8 +20,8 @@ export default function Navbar () {
         <nav>
           <div className="navbar--left">
             <div className="navbar--logo">
-              {/* <Link to="/"><img src="27.png"alt=""/></Link> */}
-              <img src={`${process.env.REACT_APP_DOMAIN}27.png`} alt=''/>
+              <Link to="/"><img src="27.png"alt=""/></Link>
+              {/* <img src={`${process.env.REACT_APP_DOMAIN}27.png`} alt=''/> */}
             </div>
           </div>
           <div className="navbar--right">
