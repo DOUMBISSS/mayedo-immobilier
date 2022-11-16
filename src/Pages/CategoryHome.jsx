@@ -35,7 +35,9 @@ export default function CategoryHome () {
                           <p className="name--project">{categorie.name}</p>
                           <p className="project--descrption">{categorie.description}</p>
                           <p className="home--price"> à partir de <span>{categorie.prices} FCFA/mois</span></p>
-                       <Link to="/details"><button className="more--details">Voir l'annonce</button></Link>
+                       <Link to="/details">
+                          <button className="more--details">Voir l'annonce</button>
+                        </Link>
                       </div>
                   </div>
                 </div>
