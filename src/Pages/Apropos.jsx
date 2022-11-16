@@ -1,9 +1,8 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Pages/Footer';
-// import {Link} from 'react-router-dom';
 
-function Apropos () {
+export default function Apropos () {
             
     return (
       <div>
@@ -35,4 +34,3 @@ function Apropos () {
     );
 }
 
-export default Apropos;

@@ -7,16 +7,16 @@ export function getHomes(homes) {
     }
 }
 
-export function getRentHomes(homes){
+export function getRentHomes(home){
     return{
         type: 'GET-RENT-HOMES',
-        payload: homes
+        payload: home
     }
 }
 
-export function getCategoryHome(homes){
-    return {
-        type: 'GET-CATEGORY-HOMES',
-        payload : homes
-    }
-}
+// export function getCategoryHome(homes){
+//     return {
+//         type: 'GET-CATEGORY-HOMES',
+//         payload : homes
+//     }
+// }

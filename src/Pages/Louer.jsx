@@ -26,11 +26,13 @@ export default function Louer () {
                         <img src={rentHome.img} alt=""/>
                       </div>
                       <div className="cards--box--content">
-                          <p className="project">{rentHome.project}</p>
-                          <p className="name--project">{rentHome.name}</p>
-                          <p className="project--descrption">{rentHome.description}</p>
+                          <p className="home">{rentHome.project}</p>
+                          <p className="home--name">{rentHome.name}</p>
+                          <p className="home--descrption">{rentHome.addresse}</p>
                           <p className="home--price"> à partir de <span>{rentHome.prices} FCFA/mois</span></p>
-                       <Link to={`/details/${rentHome.id}`}><button className="more--details">Voir l'annonce</button></Link>
+                       <Link to={`/details/${rentHome.id}`}>
+                          <button className="more--details">Voir l'annonce</button>
+                        </Link>
                       </div>
                   </div>
                 </div>

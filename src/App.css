@@ -122,12 +122,12 @@ p{
   padding: 10px;
   text-align: center;
 }
-.project{
+.home{
   font-size: 1.2rem;
   font-weight: bold;
   color: coral;
 }
-.name--project{
+.home--name{
   font-size: 1.5rem;
   font-weight: bold;
 }

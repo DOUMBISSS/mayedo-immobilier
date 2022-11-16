@@ -21,41 +21,10 @@ export default function Details () {
         <Navbar/>
         <div className='container'>
         <div className="container--header">
-            {/* <h2>{rentHome.name}</h2> */}
-            <p className="name--project">{rentHome.name}</p>
+            <h4 className="name--project">{rentHome.name}</h4>
           </div>
               <div className="container--home">
                 <div className="container--home--left--part">
-                  {/* <div className="container--home--left--part--content">
-                    <div className="container--home--left--part--content--image">  
-                      <div className="container--home--left--part--content--image--box">
-                      <img src={home.img} alt=""/>
-                      </div>
-                    </div> 
-                    <div className="container--home--left--part--content--images">
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                        <img src={home.img} alt=""/>
-                            
-                          </div>
-                      </div>
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                          <img src={home.img} alt=""/>
-                          </div>
-                        </div>
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                          <img src={home.img} alt=""/>
-                          </div>
-                        </div>
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                          <img src={home.img} alt=""/>
-                          </div>
-                        </div>
-                    </div> 
-                  </div>  */}
                   <div className="container--home--left--part--content">
                     <div className="container--home--left--part--content--image">  
                     <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
@@ -80,29 +49,6 @@ export default function Details () {
                         </button>
                       </div>
                     </div> 
-                    {/* <div className="container--home--left--part--content--images">
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                        <img src={home.img} alt=""/>
-                            
-                          </div>
-                      </div>
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                          <img src={home.img} alt=""/>
-                          </div>
-                        </div>
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                          <img src={home.img} alt=""/>
-                          </div>
-                        </div>
-                        <div className="images--thumbails">
-                          <div className="images--thumbails--box">
-                          <img src={home.img} alt=""/>
-                          </div>
-                        </div>
-                    </div>  */}
                   </div> 
                 
                 </div>
@@ -110,7 +56,6 @@ export default function Details () {
                   <div className="container--home--right--part--content">
                     <div className="container--home--left--part--content--header">
                       <p className="project">{rentHome.project}</p>
-                      {/* <p className="name--project">{rentHome.name}</p> */}
                       <p className="home--descrption">{rentHome.addresse}</p>
                     </div>
                     <div className="container--home--left--part--content--description">
@@ -123,10 +68,13 @@ export default function Details () {
                         <p>– séjour staffé </p>
                         <p>– cuisine européenne </p>
                         <p>- immense terrasse et immense cour</p>
+                        {/* <p>{rentHome.description}</p> */}
                         <p className="home--price"> à partir de <span>{rentHome.prices} FCFA/mois</span></p>                
                       </div>
                         <div className="button--block">
-                          <Link to="/contact"><button className="btn--buy">Nous contacter</button></Link>
+                          <Link to="/contact">
+                            <button className="btn--buy">Nous contacter</button>
+                          </Link>
                         </div>
                 
                     </div> 

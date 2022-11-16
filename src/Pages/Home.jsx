@@ -26,18 +26,19 @@ export default function Home () {
                 <h2>Notre sélection de coups de coeur</h2>
               </div>
               <div className="container--content">
-                {homes.map((home) =>
-                <div key={home.id} className="cards">
+      {homes.map((home,id) => <div key={id} className="cards">
                   <div className="cards--box">
                       <div className="cards--box--header">
                         <img src={home.img} alt=""/>
                       </div>
                       <div className="cards--box--content">
-                          <p className="project">{home.project}</p>
-                          <p className="name--project">{home.name}</p>
-                          <p className="project--descrption">{home.addresse}</p>
+                          <p className="home">{home.project}</p>
+                          <p className="home--name">{home.name}</p>
+                          <p className="home--descrption">{home.addresse}</p>
                           <p className="home--price"> à partir de <span>{home.prices} FCFA/mois</span></p>
-                       <Link to={`/details/${home.id}`}><button className="more--details">Voir l'annonce</button></Link>
+                       <Link to={`/details/${home.id}`}>
+                          <button className="more--details">Voir l'annonce</button>
+                        </Link>
                       </div>
                   </div>
                 </div>
@@ -71,7 +72,9 @@ export default function Home () {
             <div className="question--part--content">
              <h3 className='question'>À la recherche d’un appartement, d’une villa à louer ou à vendre?</h3>
             <div className="question--part--btn">
-             <Link className='liste' to="/contact"> <button className="btn--contact">Contactez-nous !</button></Link>
+             <Link className='liste' to="/contact"> 
+              <button className="btn--contact">Contactez-nous !</button>
+             </Link>
             </div>
             </div>
         </div>

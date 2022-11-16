@@ -16,31 +16,26 @@ export default function DetailsProject (){
                     </div>
                     <div className="detail--project--content">
                         <div className="detail--project--content--left">
-                            {/* <img src="https://www.addoha.ci/images/projects/cite-des-orchidees-1.jpg" alt="" /> */}
                             <img src="40.jpg" alt="" />
                         </div>   
                         <div className="detail--project--content--right">
                             <div className="images--container">
                                 <div className="images--container--box">
-                                    {/* <img src="https://www.addoha.ci/images/projects/cite-des-orchidees-2.jpg" alt="" /> */}
                                     <img src="41.jpg" alt="" />
                                 </div>
                             </div>
                             <div className="images--container">
                                 <div className="images--container--box">
-                                    {/* <img src="https://www.addoha.ci/images/projects/cite-des-orchidees-3.jpg" alt="" /> */}
                                     <img src="42.jpg" alt="" />
                                 </div>
                             </div>
                             <div className="images--container">
                                 <div className="images--container--box">
-                                    {/* <img src="https://www.addoha.ci/images/projects/cite-des-orchidees-4.jpg" alt="" /> */}
                                     <img src="43.jpg" alt="" />
                                 </div>
                             </div>
                             <div className="images--container">
                                 <div className="images--container--box">
-                                    {/* <img src="https://www.addoha.ci/images/projects/cite-des-orchidees-5.jpg" alt="" /> */}
                                     <img src="44.jpg" alt="" />
                                 </div>
                             </div>
@@ -54,7 +49,9 @@ export default function DetailsProject (){
                             <p>- 2 commerces (Magasins)</p>
                             <p>- 800 m²</p>
                             <p>- Parking privé</p>
-                            <Link className='liste' to="/contact"> <button className="btn--contact">Réservez dès maintenant</button></Link>
+                            <Link className='liste' to="/contact"> 
+                                <button className="btn--contact">Réservez dès maintenant</button>
+                            </Link>
                         </div>
                 </div>
             <Footer/>

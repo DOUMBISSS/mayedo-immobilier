@@ -28,7 +28,7 @@ export default function Navbar () {
               <Link className='liste' to="/">Accueil</Link>
               <Link className='liste' to="/louer">Locations</Link>
               <Link className='liste' to="/contact">Contacts</Link>
-              <Link className='liste' to="/propos">A propos</Link>
+              <Link className='liste' to="/about">A propos</Link>
               <form>
                 <input className="form-control me-2" type="text" placeholder="Search" />
               </form>
@@ -49,7 +49,7 @@ export default function Navbar () {
               <p><Link className='liste' to="/">Accueil</Link></p>
               <p><Link className='liste' to="/louer">Locations</Link></p>
               <p><Link className='liste' to="/contact">Contacts</Link></p>
-              <p><Link className='liste' to="/propos">A propos</Link></p>
+              <p><Link className='liste' to="/about">A propos</Link></p>
               <form>
                 <input className="form-control me-2" type="text" placeholder="Search" />
               </form>
