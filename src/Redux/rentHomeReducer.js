@@ -12,7 +12,11 @@ const initialState = {
                     'toilette visiteur','séjour staffé','cuisine européenne','immense terrasse et immense cour'
                 ],
                 prices :'5500000',
-                img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                img :[
+                    "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                    "27.png",
+                    "17.jpeg"
+                ],
                 id:uid(),
             },
 
@@ -25,7 +29,11 @@ const initialState = {
                     'toilette visiteur','séjour staffé','cuisine européenne','immense terrasse et immense cour'
                 ],
                 prices :'7500000',
-                img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-13-at-11.44.48-525x328.jpeg",
+                img :[
+                    "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                    "27.png",
+                    "17.jpeg"
+                ],
                 id:uid(),
             },
 
@@ -38,7 +46,11 @@ const initialState = {
                     'toilette visiteur','séjour staffé','cuisine européenne','immense terrasse et immense cour'
                 ],
                 prices :'7500000',
-                img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-13-at-11.44.48-525x328.jpeg",
+                img :[
+                    "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                    "27.png",
+                    "17.jpeg"
+                ],
                 id:uid(),
             },
             {   name: 'Belle Villa Meublée de 6 Pièces ',
@@ -50,11 +62,13 @@ const initialState = {
                     'toilette visiteur','séjour staffé','cuisine européenne','immense terrasse et immense cour'
                 ],
                 prices :'5500000',
-                img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                img :[
+                    "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                    "27.png",
+                    "17.jpeg"
+                ],
                 id:uid(),
-                // images:["https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
-                //         "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-13-at-11.44.48-525x328.jpeg",
-                //         ]
+               
             },
         
             {   name: 'Belle Villa Meublée de 6 Pièces',
@@ -66,7 +80,11 @@ const initialState = {
                     'toilette visiteur','séjour staffé','cuisine européenne','immense terrasse et immense cour'
                 ],
                 prices :'7500000',
-                img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-13-at-11.44.48-525x328.jpeg",
+                img :[
+                    "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                    "27.png",
+                    "17.jpeg"
+                ],
                 id:uid(),
             },
         
@@ -79,7 +97,11 @@ const initialState = {
                     'toilette visiteur','séjour staffé','cuisine européenne','immense terrasse et immense cour'
                 ],
                 prices :'7500000',
-                img :"https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-13-at-11.44.48-525x328.jpeg",
+                img :[
+                    "https://isis-immobilier.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-23-at-13.18.16-525x328.jpeg",
+                    "27.png",
+                    "17.jpeg"
+                ],
                 id:uid(),
             },
             

@@ -29,7 +29,7 @@ export default function Home () {
       {homes.map((home,id) => <div key={id} className="cards">
                   <div className="cards--box">
                       <div className="cards--box--header">
-                        <img src={home.img} alt=""/>
+                        <img src={home.img[0]} alt=""/>
                       </div>
                       <div className="cards--box--content">
                           <p className="home">{home.project}</p>
@@ -62,8 +62,7 @@ export default function Home () {
                 Que vous soyez acquéreur ou vendeur, bailleur ou locataire; vous avez un interlocuteur unique pour vous aider à concrétiser votre projet.</p>
           </div>
             <div className="description--enterprise--content--right">
-              <img src="17.jpeg" alt="" />
-              {/* <img src={`${process.env.REACT_APP_DOMAIN}17.jpeg`} alt=''/> */}
+              <img src={`${process.env.PUBLIC_URL}/17.png`} alt=''/>
             </div>
         </div>
         <Project/>

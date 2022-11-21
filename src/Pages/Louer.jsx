@@ -23,7 +23,7 @@ export default function Louer () {
                 <div key={rentHome.id} className="cards">
                   <div className="cards--box">
                       <div className="cards--box--header">
-                        <img src={rentHome.img} alt=""/>
+                        <img src={rentHome.img[0]} alt=""/>
                       </div>
                       <div className="cards--box--content">
                           <p className="home">{rentHome.project}</p>

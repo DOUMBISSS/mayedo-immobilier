@@ -14,20 +14,18 @@ export default function Contact () {
 
   const SubmitForm = (event)=>{
     event.preventDefault();
+    const dataForm={
+      name,
+      email,
+      number,
+      message
+    }
     fetch ('api/mayedo.com',{
       methode:"POST",
-      body:JSON.stringify(
-        {
-          email:'doumbia77fode@gmail.com',
-          password:'gdddh',
-          name:'doumbia',
-          number:'0777880082'
-        }
-      )
+      body:JSON.stringify(dataForm)
     })
     .then(res=>res.json())
     .then(json=>console.log(json))
-    // alert(`votre message a été reçu !!!: ${name}`)
     setName(" ");
     setEmail(" ");
     setMessage(" ");
