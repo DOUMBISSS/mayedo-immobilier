@@ -34,13 +34,16 @@ export default function Details () {
                     <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
                         <div className="carousel-inner">
                           <div className="carousel-item active">
-                            <img src={detail.img[0]} className="d-block w-100" alt="..."/>
+                            <img src={`${process.env.PUBLIC_URL}/${detail.img[0]}`} className="d-block w-100" alt="..."/>
                           </div>
                           <div className="carousel-item">
                             <img src={`${process.env.PUBLIC_URL}/${detail.img[1]}`}  className="d-block w-100" alt="..."/>
                           </div>
                           <div className="carousel-item">
                             <img src={`${process.env.PUBLIC_URL}/${detail.img[2]}`} className="d-block w-100" alt="..."/>
+                          </div>
+                          <div className="carousel-item">
+                            <img src={`${process.env.PUBLIC_URL}/${detail.img[3]}`} className="d-block w-100" alt="..."/>
                           </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">

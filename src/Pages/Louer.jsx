@@ -30,9 +30,9 @@ export default function Louer () {
                           <p className="home--name">{rentHome.name}</p>
                           <p className="home--descrption">{rentHome.addresse}</p>
                           <p className="home--price"> à partir de <span>{rentHome.prices} FCFA/mois</span></p>
-                       <Link to={`/details/${rentHome.id}`}>
-                          <button className="more--details">Voir l'annonce</button>
-                        </Link>
+                          <Link to={`/details/${rentHome.id}`}>
+                            <button className="more--details">Voir l'annonce</button>
+                          </Link>
                       </div>
                   </div>
                 </div>
