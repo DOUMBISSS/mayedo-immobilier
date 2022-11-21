@@ -217,6 +217,7 @@ p{
   color: rgb(12, 52, 103);
   font-weight: bold;
   background-color: rgb(223, 222, 222);
+  margin-top: 1rem;
 }
 .footer p{
   margin: 10px;
@@ -578,7 +579,6 @@ h6{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url('https://www.addoha.ci/images/projects/cite-des-orchidees-thmb.jpg'); */
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -591,33 +591,46 @@ h5{
   font-weight: bold;
 }
 .main--part--project--left--part{
-  width: 70%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
   border-bottom: 1px solid coral;
 }
 .main--part--project--right--part{
-  width: 30%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
   border-bottom: 1px solid coral;
 }
 .main--part--project--right--part--content{
-  width: 50%;
+  width: 100%;
   height: 50%;
   margin-left: 1rem;
+}
+.name--project{
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color:rgb(12, 52, 103);
+}
+.top--houses{
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color:rgb(12, 52, 103);
 }
 .btn--details{
   padding: 0.6rem;
   color: white;
-  width: 100px;
+  width: 200px;
   margin-top: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   background-color: coral;
+  font-weight: bold;
 }
 .btn--details:hover{
   padding: 0.6rem;

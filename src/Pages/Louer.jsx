@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import {Link} from 'react-router-dom';
 import Navbar from '../Navbar';
-import Filter from './Filter';
+// import Filter from './Filter';
 import Footer from './Footer';
 
 export default function Louer () {
@@ -17,7 +17,7 @@ export default function Louer () {
                   (Agences immobilières, Promoteurs, Notaires, Agents d’affaires),
                    nous recherchons pour vous les biens les plus en adéquation avec vos critères de sélection et vous accompagnons dans la réalisation de toutes les formalités. </p>
               </div>
-              <Filter/>
+              {/* <Filter/> */}
               <div className="container--content">
               {rentHomes.map((rentHome) =>
                 <div key={rentHome.id} className="cards">

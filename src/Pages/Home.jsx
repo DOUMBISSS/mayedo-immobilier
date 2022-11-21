@@ -23,7 +23,8 @@ export default function Home () {
    
         <div className="container">
               <div className="container--header">
-                <h2>Notre sélection de coups de coeur</h2>
+                {/* <h2>Notre sélection de coups de coeur</h2> */}
+                <h3 className="top--houses">Notre sélection de coups de coeur</h3>
               </div>
               <div className="container--content">
       {homes.map((home,id) => <div key={id} className="cards">

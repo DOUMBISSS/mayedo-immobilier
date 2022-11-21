@@ -9,9 +9,6 @@ export default function Contact () {
   const [name,setName]=useState();
   const [email,setEmail]=useState();
   const [message,setMessage]=useState();
-
-  console.log(email)
-
   const SubmitForm = (event)=>{
     event.preventDefault();
     const dataForm={
@@ -42,7 +39,7 @@ export default function Contact () {
                 <div className="main--contact--content--left">
                   <form>
                     <div className="mb-3">
-                      <label htmlFor="exampleInputEmail1" className="form-label">Noms complets</label>
+                      <label htmlFor="exampleInputEmail1" className="form-label">Noms & Prénoms</label>
                       <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={name} onChange={(e) => setName(e.target.value)}/>
                     </div>
                     <div className="mb-3">
