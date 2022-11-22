@@ -2,31 +2,52 @@ import React, { useState } from 'react';
 import Footer from '../Pages/Footer';
 // import {Link} from 'react-router-dom';
 import Navbar from '../Navbar';
+import { getUser } from '../Redux/actions';
+import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact () {
 
   const [number,setNumber]=useState();
   const [name,setName]=useState();
   const [email,setEmail]=useState();
-  const [message,setMessage]=useState();
+  const [content,setContent]=useState();
+  const dispatch = useDispatch();
+  const notify = (e) => {
+    e.preventDefault();
+    toast.success('Votre Message a bien été reçu , notre équipe vous contactera dès ques possible', {
+      position: "top-right",
+      autoClose: 3001,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
+  };
+
   const SubmitForm = (event)=>{
     event.preventDefault();
-    const dataForm={
+    const data={
       name,
       email,
       number,
-      message
+      content
     }
-    fetch ('api/mayedo.com',{
-      methode:"POST",
-      body:JSON.stringify(dataForm)
+    fetch('http://127.0.0.1:4000/register',{
+      method:"POST",
+      headers :{'Content-Type':"application/json"},
+      body:JSON.stringify(data)
     })
     .then(res=>res.json())
-    .then(json=>console.log(json))
+    .then(data=>dispatch(getUser(data)))
     setName(" ");
     setEmail(" ");
-    setMessage(" ");
+    setContent(" ");
     setNumber(" ");
+    console.log(data)
   }
             
     return (
@@ -52,9 +73,22 @@ export default function Contact () {
                     </div>
                     <div className="mb-3">
                       <label htmlFor="exampleFormControlTextarea1" className="form-label">Votre message</label>
-                      <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                      <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={content} onChange={(e) => setContent(e.target.value)}></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary" onSubmit={SubmitForm}>Envoyer</button>
+                    <button type="submit" className="btn btn-primary" onClick={notify}>Envoyer</button>
+                    {/* <button onClick={notify}>Notify!</button> */}
+                    <ToastContainer
+                        position="top-right"
+                        autoClose={2001}
+                        hideProgressBar={true}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="colored"
+/>
                   </form>
                 </div>
                 <div className="main--contact--content--right">

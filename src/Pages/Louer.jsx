@@ -13,7 +13,7 @@ export default function Louer () {
         <div className='container'>
               <div className="container--header">
                 <h2>LOCATIONS</h2>
-                <p>Grâce à notre maîtrise de la cartographie Abidjanaise et les connexions solides que nous avons tissés avec les partenaires du secteur depuis plusieurs années 
+                  <p>Grâce à notre maîtrise de la cartographie Abidjanaise et les connexions solides que nous avons tissés avec les partenaires du secteur depuis plusieurs années 
                   (Agences immobilières, Promoteurs, Notaires, Agents d’affaires),
                    nous recherchons pour vous les biens les plus en adéquation avec vos critères de sélection et vous accompagnons dans la réalisation de toutes les formalités. </p>
               </div>

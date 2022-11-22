@@ -14,9 +14,9 @@ export function getRentHomes(home){
     }
 }
 
-// export function getCategoryHome(homes){
-//     return {
-//         type: 'GET-CATEGORY-HOMES',
-//         payload : homes
-//     }
-// }
+export function getUser(user){
+    return{
+        type:'GET-USER',
+        payload: user
+    }
+}
