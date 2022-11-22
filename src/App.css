@@ -692,7 +692,6 @@ h5{
   width: 50%;
   height: 100%;
   cursor: pointer;
-  /* border: 1px solid coral; */
 }
 .detail--project--content--left img{
   width: 100%;
@@ -706,7 +705,6 @@ h5{
 .detail--project--content--right{
   width: 50%;
   height: 100%;
-  /* border: 1px solid coral; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -921,7 +919,7 @@ h5{
   padding: 1rem;
 }
 .main--part--project{
-  height: 70vh;
+  height: 75vh;
   padding: 1rem ;
   display: block;
 }

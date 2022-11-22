@@ -79,7 +79,7 @@ export default function Contact () {
                     {/* <button onClick={notify}>Notify!</button> */}
                     <ToastContainer
                         position="top-right"
-                        autoClose={2001}
+                        autoClose={3001}
                         hideProgressBar={true}
                         newestOnTop={false}
                         closeOnClick
