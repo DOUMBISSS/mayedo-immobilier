@@ -6,7 +6,8 @@ import Navbar from '../Navbar';
 import Footer from './Footer';
 
 export default function Louer () {
-  const rentHomes = useSelector(state =>state.rentHomeReducer.rentHomes);
+  const rentHomes = useSelector(state =>state.homeReducer.rentHomes);
+  
     return (
     <div>
         <Navbar />

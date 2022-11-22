@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 export default function Details () {
 
-  const rentHomes = useSelector(state => state.rentHomeReducer.rentHomes);
+  const rentHomes = useSelector(state => state.homeReducer.rentHomes);
   const homes = useSelector(state => state.homeReducer.homes);
   const dispatch = useDispatch();
 
