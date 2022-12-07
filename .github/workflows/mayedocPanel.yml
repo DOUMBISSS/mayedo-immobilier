@@ -14,4 +14,4 @@ jobs:
         server: mac12.winihost.com
         username: mayedo@wh100130
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /home/wh100130/mayedo.ci/
+        server-dir: /public_html/mayedo.ci/
