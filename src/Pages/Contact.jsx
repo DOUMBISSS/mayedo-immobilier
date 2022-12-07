@@ -88,7 +88,7 @@ export default function Contact () {
                         draggable
                         pauseOnHover
                         theme="colored"
-/>
+                        />
                   </form>
                 </div>
                 <div className="main--contact--content--right">
