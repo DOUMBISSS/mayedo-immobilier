@@ -45,16 +45,16 @@ export default function Navbar () {
           </div>
         </nav>
         <div className={display ? "sidebar show-sidebar" : "sidebar"}>
-      <div className='sidebar--menu'>
-        <div className='btn--close--sidebar' onClick={affi}>X</div>
-              <p><Link className='liste' to="/">Accueil</Link></p>
-              <p><Link className='liste' to="/louer">Locations</Link></p>
-              <p><Link className='liste' to="/contact">Contacts</Link></p>
-              <p><Link className='liste' to="/about">A propos</Link></p>
-              <form>
-                <input className="form-control me-2" type="text" placeholder="Search" />
-              </form>
-      </div>
+          <div className='sidebar--menu'>
+            <div className='btn--close--sidebar' onClick={affi}>X</div>
+                  <p><Link className='liste' to="/">Accueil</Link></p>
+                  <p><Link className='liste' to="/louer">Locations</Link></p>
+                  <p><Link className='liste' to="/contact">Contacts</Link></p>
+                  <p><Link className='liste' to="/about">A propos</Link></p>
+                  <form>
+                    <input className="form-control me-2" type="text" placeholder="Search" />
+                  </form>
+          </div>
     </div>
     </header>
   </div>
