@@ -20,8 +20,8 @@ return (
                 <h4>Contactez-nous</h4>
                 <p><i className="fa-solid fa-location-dot"></i> Cocody Angré 7eme Tranche / Abidjan – Plateau – 01 BP 2076 Abidjan 01</p>
                 <p><i className="fa-solid fa-phone"></i> +225 07 77 88 00 82</p>
-                <p><i className="fa-solid fa-envelope"></i> mayedo@immobilier.ci</p>
-                <p><i className="fa-solid fa-globe"></i> www.mayedo.com</p>
+                <p><i className="fa-solid fa-envelope"></i> sci@mayedo.ci</p>
+                <p><i className="fa-solid fa-globe"></i> www.mayedo.ci</p>
               </div>
 
               <div className='social--media'>
