@@ -7,6 +7,8 @@ import Apropos from './Pages/Apropos';
 import Details from './Pages/Details';
 import 'animate.css';
 import DetailsProject from './Pages/DetailsProject';
+import Concierge from './Pages/Concierge';
+import Services from './Pages/Services';
 
 
 
@@ -19,6 +21,8 @@ export default function App() {
     <Route path='/about' element={<Apropos/>} />
     <Route path='/details/:id' element={<Details/>} />
     <Route path='/detail' element={<DetailsProject/>} />
+    <Route path='/conciergerie' element={<Concierge/>} />
+    <Route path='/services' element={<Services/>} />
   </Routes>
   );
 }

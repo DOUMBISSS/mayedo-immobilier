@@ -22,6 +22,7 @@ export default function Details () {
   const [name,setName]=useState();
   const [email,setEmail]=useState();
   const [message,setMessage]=useState();
+
   const SubmitForm = (event)=>{
     event.preventDefault();
     const dataForm={
@@ -50,7 +51,7 @@ export default function Details () {
         <Navbar/>
         <div className='container'>
         <div className="container--header">
-            <h4 className="name--project">{detail.name}</h4>
+            <h5 className="name--home">{detail.name}</h5>
           </div>
               <div className="container--home">
                 <div className="container--home--left--part">
@@ -92,7 +93,7 @@ export default function Details () {
                     </div>
                     <div className="container--home--left--part--content--description">
                       <div className="description--property">
-                        <h6>Description</h6>
+                        <h6 className='desc--header'>Description</h6>
                         <p>Superbe penthouse de 3 pièces à Riviera mondial béton avec vue sur la lagune </p>
                         <p>- chambre principale autonome </p>
                         <p>– salle d’eau extérieure à la seconde chambre</p>
@@ -114,35 +115,27 @@ export default function Details () {
                 
                 </div>
               </div>
+              <div className='main__part__conditions'>
+              <h6 className='main__part__conditions__header'>SITUATION :</h6>
+                    <p>En plein cœur de la ville d’Abidjan, à Cocody, quartier résidentiel par excellence, 
+                      très prisé pour sa centralité et son accessibilité aux différents quartiers périphériques (Plateau, Vieux Cocody Ambassades, Riviera), à proximité de l’autoroute du Nord (vers Yopougon) et de la voie rapide vers le nouveau pont HKB. </p>
+                  <h6 className='main__part__conditions__header'>Conditions de locations</h6>
+                    <p>2 Mois de loyers d’avance</p>
+                    <p>2 Mois de caution</p>
+                    <p>Honoraires d’agence (1 mois de loyer mensuel TCC) + TVA</p>
+                    <p>Frais de dossier (sur la base de 10 % du montant du loyer mensuel) + TVA </p>
+                  <h6 className='main__part__conditions__header'>LES CHARGES COMPRENNENT : </h6>
+                    <p>2 places de parking seront attribuées pour les appartements de 4, 5 et 6 pièces et 1 place de parking pour les appartements de 3 pièces.</p>
+                    <p>L’entretien des parties communes et des équipements communs (ascenseur, climatiseurs, antenne parabolique, sur presseur et groupe électrogène) ainsi que le gardiennage.</p>
+                  <h6 className='main__part__conditions__header'> Frais Annexes: </h6>
+                    <p>Compteur individuel d’électricité. </p>
+                    <p>Abonnement internet et TV</p>
+                  <h6 className='main__part__conditions__header'> Disponibilités: </h6>
+                    <Link className='na' to='/contact' cl><p>Nous consulter </p></Link>
+              </div>
         </div>
-        <div className="container">
-          <div className="main--contact">
-            <h4>Remplissez notre formulaire de contact</h4>
-            <div className="main--contact--content">
-                <div className="main--contact--content--left">
-                  <form>
-                    <div className="mb-3">
-                      <label htmlFor="exampleInputEmail1" className="form-label">Noms & Prénoms</label>
-                      <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={name} onChange={(e) => setName(e.target.value)}/>
-                    </div>
-                    <div className="mb-3">
-                      <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
-                      <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                    </div>
-                    <div className="mb-3">
-                      <label htmlFor="exampleFormControlInput1" className="form-label">Numéro de téléphone</label>
-                      <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Numero de telephone" value={number} onChange={(e) => setNumber(e.target.value)}/>
-                    </div>
-                    <div className="mb-3">
-                      <label htmlFor="exampleFormControlTextarea1" className="form-label">Votre message</label>
-                      <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                    </div>
-                    <button type="submit" className="btn btn-primary" onSubmit={SubmitForm}>Envoyer</button>
-                  </form>
-                </div>
-            </div>
-          </div>
-        </div>
+
+
           <Footer/>
      </div>
     );

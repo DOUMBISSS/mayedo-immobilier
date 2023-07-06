@@ -38,11 +38,12 @@ export default function Contact () {
     return (
     <div>
         <Navbar />
-        <div className="container">
           <div className="main--contact">
-            <h4>Remplissez notre formulaire de contact</h4>
+            <h1 className='header__contact'>Contactez l'Agence</h1>
+            <h5 className='header__contact'>Remplissez notre formulaire de contact</h5>
             <div className="main--contact--content">
                 <div className="main--contact--content--left">
+                  <div className='form__container'>
                   <form onSubmit={SubmitForm}>
                     <div className="mb-3">
                       <label htmlFor="exampleInputEmail1" className="form-label">Noms & Prénoms</label>
@@ -62,17 +63,19 @@ export default function Contact () {
                     </div>
                     <button type="submit" className="btn btn-primary">Envoyer</button>
                   </form>
+                  </div>
                 </div>
                 <div className="main--contact--content--right">
-                  <p>Aidez-nous à mieux comprendre vos besoins</p>
+                    <div className='main--contact--content--right--box'>
+                    <p>Aidez-nous à mieux comprendre vos besoins</p>
                   <p>Adresse : Cocody Angré 7eme Tranche / Abidjan – Plateau – 01 BP 2076 Abidjan 01</p>
                   <p>Tel : +225 07 77 88 00 82</p>
                   <p> E-mail : sci@mayedo.ci</p>
                   <p>site web : www.mayedo.ci</p>
+                    </div>
                 </div>
             </div>
           </div>
-        </div>
         <Footer/>
     </div>
     );

@@ -5,7 +5,7 @@ import '../App.css';
 import { useSelector } from 'react-redux';
 import {Link} from 'react-router-dom';
 import Project from './Project';
-
+import bgImage from '../video/background.mp4'
 
 export default function Home () {
   const homes = useSelector(state =>state.homeReducer.homes);
@@ -15,8 +15,11 @@ export default function Home () {
         <Navbar/>
         <div>
          <div className="main--part">
+         <video autoPlay loop muted>
+                        <source src={bgImage}/>
+                    </video>
             <div className="slogan">
-              <h1>TROUVEZ VOTRE BIEN IMMOBILIER</h1>
+              <h2 className='slogan__title'>TROUVEZ VOTRE BIEN IMMOBILIER</h2>
               <p>La référence de l'immobilier</p>
             </div>
     </div>
@@ -27,15 +30,15 @@ export default function Home () {
                 <h3 className="top--houses">Notre sélection de coups de coeur</h3>
               </div>
               <div className="container--content">
-      {homes.map((home,id) => <div key={id} className="cards">
-                  <div className="cards--box">
-                      <div className="cards--box--header">
-                        <img src={`${process.env.PUBLIC_URL}/${home.img[0]}`} alt=""/>
-                      </div>
+                {homes.map((home,id) => <div key={id} className="card__mb">
+                    <div className="cards--box">
+                        <div className="cards--box--header">
+                        <Link to={`/details/${home.id}`}> <img src={`${process.env.PUBLIC_URL}/${home.img[0]}`} alt=""/></Link>
+                        </div>
                       <div className="cards--box--content">
                           <p className="home">{home.project}</p>
                           <p className="home--name">{home.name}</p>
-                          <p className="home--descrption">{home.addresse}</p>
+                          {/* <p className="home--descrption">{home.addresse}</p> */}
                           <p className="home--price"> à partir de <span>{home.prices} FCFA/mois</span></p>
                        <Link to={`/details/${home.id}`}>
                           <button className="more--details">Voir l'annonce</button>
@@ -78,7 +81,6 @@ export default function Home () {
             </div>
             </div>
         </div>
-      
 
         </div>
         <Footer/>

@@ -47,11 +47,31 @@ export default function DetailsProject (){
                             <h5>Details concernant le projet</h5>
                             <p>- 21 appartements</p>
                             <p>- 2 commerces (Magasins)</p>
-                            <p>- 800 m²</p>
+                            <p>- 1000 m²</p>
                             <p>- Parking privé</p>
+
+                            <h6 className='main__part__conditions__header'>Conditions de locations</h6>
+                                    <p>2 Mois de loyers d’avance</p>
+                                    <p>2 Mois de caution</p>
+                                    <p>Honoraires d’agence (1 mois de loyer mensuel TCC) + TVA</p>
+                                    <p>Frais de dossier (sur la base de 10 % du montant du loyer mensuel) + TVA </p>
+
+                                    <h6 className='main__part__conditions__header'>LES CHARGES COMPRENNENT : </h6>
+                                    <p>2 places de parking seront attribuées pour les appartements de 4, 5 et 6 pièces et 1 place de parking pour les appartements de 3 pièces.</p>
+                                    <p>L’entretien des parties communes et des équipements communs (ascenseur, climatiseurs, antenne parabolique, sur presseur et groupe électrogène) ainsi que le gardiennage.</p>
+
+                                    <h6 className='main__part__conditions__header'> Frais Annexes: </h6>
+                                    <p>Compteur individuel d’électricité. </p>
+                                    <p>Abonnement internet et TV</p>
+                                
+
+                                    <h6 className='main__part__conditions__header'> Disponibilités: </h6>
+                                    <Link className='na' to='/contact' cl><p>Nous consulter </p></Link>
+
                             <Link className='liste' to="/contact"> 
                                 <button className="btn--contact">Réservez dès maintenant</button>
                             </Link>
+                            
                         </div>
                 </div>
             <Footer/>

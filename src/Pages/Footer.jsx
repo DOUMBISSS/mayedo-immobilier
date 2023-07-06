@@ -29,11 +29,12 @@ return (
                   <p><i className="fa-brands fa-facebook"></i>Facebook</p>
                   <p><i className="fa-brands fa-instagram"></i>Instagram</p>
                   <p><i className="fa-brands fa-whatsapp"></i>WhatsApp</p>
+                  <p><i class="fa-brands fa-tiktok"></i> Tiktok</p>
               </div>
           </div>
 
            <div className='name--developer'>
-            <p>Developed by Doumbia Fode (0777880082)</p>
+            <p>Developed by Doumbia Fode (+225 0777880082)</p>
            </div>
       </div>
     </div>
