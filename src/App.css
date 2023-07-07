@@ -88,17 +88,17 @@ video{
   top: 0;
   z-index: -1;
 }
-.container--header{
+/* .container--header{
   width: 100%;
   text-align: center;
   border-bottom: 1px solid darkgray;
   font-weight: 600;
-}
+} */
 .container--content{
   width: 100%;
- display: flex;
- align-items: center;
- justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  flex-wrap: wrap;
 }
 .cards{
@@ -115,9 +115,10 @@ video{
   width: 300px;
   /* height: 390px; */
   padding: 0.6rem;
-  margin-bottom: 1rem;
   animation:fadeInUp 2s linear;
   margin: 0.5rem;
+  border-radius: 0.7rem;
+  border: 1px solid gainsboro;
 }
 p{
   margin-bottom: 0 !important;
@@ -293,11 +294,10 @@ p{
   /* background-color:rgb(12, 52, 103); */
   color: rgb(12, 52, 103);
   font-weight: bold;
-  background-color: rgb(223, 222, 222);
+  background-color: rgb(245, 242, 242);
 }
-.footer p{
-  margin: 10px;
-  color: rgb(12, 52, 103);
+.footer__title{
+  font-weight: bold;
 }
 .foot--content{
   width: 100%;
@@ -308,11 +308,13 @@ p{
 }
 .schedule{
   height: 200px;
+  margin-bottom: 1rem;
   text-align: center;
 }
 .address{
   height: 200px;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .social--media{
   height: 200px;
@@ -327,9 +329,6 @@ p{
 .name--developer{
   width: 100%;
   text-align: end;
-}
-h4{
-  font-weight: 700;
 }
 .right{
   width: 100%;
@@ -536,7 +535,7 @@ h4{
 }
 .md{
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .container__rent__homes{
   width: 100%;
@@ -747,11 +746,15 @@ h5{
   color:rgb(12, 52, 103);
 }
 .top--houses{
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
   color:rgb(12, 52, 103);
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  margin: 1rem 0;
 }
 .btn--details{
   padding: 0.6rem;
@@ -1088,6 +1091,9 @@ h5{
     margin-bottom: 10px;
     color: #000;
   } */
+  .question{
+    font-size: 1.7rem;
+  }
  .container{
   padding: 0;
 }
@@ -1097,6 +1103,10 @@ h5{
 .cards{
   width: 100%;
   padding: 10px;
+}
+.md{
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 .description--enterprise{
   width: 100%;
@@ -1144,6 +1154,9 @@ h5{
 }
 .main--contact--content--right{
   width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.7rem;
+  border: 1px solid coral;
 }
 .main--contact--content--left{
   width: 100%;
@@ -1167,7 +1180,7 @@ h5{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid gainsboro;
+  /* border: 1px solid gainsboro; */
   flex-wrap: wrap;
 }
 .filter__container{
@@ -1224,9 +1237,9 @@ h5{
   width: 100%;
   padding: 0;
 }
-.footer p{
+/* .footer p{
   margin: 10px;
-}
+} */
 .foot--content{
   display: block;
 }
@@ -1294,7 +1307,8 @@ h5{
   padding: 1rem ;
 }
 .name--home{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 .top--houses{
   font-size: 1.3rem;

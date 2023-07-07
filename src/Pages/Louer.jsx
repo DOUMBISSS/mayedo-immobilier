@@ -65,7 +65,7 @@ const filterTypes = (catItem)=>{
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button class="accordion-button collapsed" id="but" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                         Appartements
                                 </button>
                                 </h2>
@@ -83,7 +83,7 @@ const filterTypes = (catItem)=>{
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <button class="accordion-button collapsed" id="but" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         Villas
                                 </button>
                                 </h2>
