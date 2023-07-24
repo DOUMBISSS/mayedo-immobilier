@@ -15,7 +15,7 @@ export default function Home () {
         <Navbar/>
         <div>
          <div className="main--part">
-         <video autoPlay loop muted>
+                  <video autoPlay loop muted>
                         <source src={bgImage}/>
                     </video>
             <div className="slogan">

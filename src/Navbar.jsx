@@ -17,7 +17,7 @@ export default function Navbar () {
     return (
       <div>
       <header>
-        <nav>
+        <div className='navbar'>
           <div className="navbar--left">
             <div className="navbar--logo">
               <Link to="/"><img src={`${process.env.PUBLIC_URL}/27.png`} alt=''/> </Link>
@@ -27,6 +27,7 @@ export default function Navbar () {
             <div className="navbar--right--content">
               <Link className='liste' to="/">Accueil</Link>
               <Link className='liste' to="/louer">Locations</Link>
+              <p><Link className='liste' to="/Nos--realisations">Nos réalisations</Link></p>
               {/* <Link className='liste' to="/conciergerie">Conciergerie</Link> */}
               <Link className='liste' to="/contact">Contacts</Link>
               <Link className='liste' to="/about">L'agence</Link>
@@ -43,12 +44,13 @@ export default function Navbar () {
                       </div> */}
                   </div>
           </div>
-        </nav>
+        </div>
         <div className={display ? "sidebar show-sidebar" : "sidebar"}>
           <div className='sidebar--menu'>
             <div className='btn--close--sidebar' onClick={affi}>X</div>
                   <p><Link className='liste' to="/">Accueil</Link></p>
                   <p><Link className='liste' to="/louer">Locations</Link></p>
+                  <p><Link className='liste' to="/Nos--realisations">Nos réalisations</Link></p>
                   <p><Link className='liste' to="/contact">Contacts</Link></p>
                   <p><Link className='liste' to="/about">L'agence</Link></p>
                   {/* <form>

@@ -19,7 +19,7 @@ header{
   justify-content: center;
   /* background-color: white; */
 }
-nav{
+.navbar{
   width: 90%;
   height: 95%;
   display: flex;
@@ -74,7 +74,6 @@ nav{
   height:100vh;
   margin-bottom: 0.5rem;
   position: relative;
-  /* border: 1px solid coral; */
   /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,7 +180,7 @@ p{
   padding: 1rem;
   text-decoration: none;
   color:rgb(12, 52, 103);
-  /* font-weight: bold; */
+  font-weight: bold;
   font-size: 1.1rem;
 }
 .na{
@@ -199,12 +198,16 @@ p{
 .main--contact{
   width: 100%;
   padding: 0.7rem;
-  animation: fadeInUp 1s linear;
-  background-image: url('https://images.unsplash.com/photo-1551590192-8070a16d9f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeInUp .7s linear;
+  
+  background-image: url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
 }
 .main--contact--content{
   width: 100%;
-  height: 90%;
+  height: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +348,7 @@ p{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url('https://images.unsplash.com/photo-1551590192-8070a16d9f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80');
+  background: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80');
   animation:fadeInRight 3s linear;
 }
 .question--part--content{
@@ -673,7 +676,7 @@ p{
   padding: 0.5rem;
   display: flex;
   align-items: center;
-  transition: ease-in-out 1s;
+  transition: ease-in-out .7s;
   justify-content: center;
   background-color:white;
   /* box-shadow: 0px 0px 9px 5px black; */
@@ -681,7 +684,7 @@ p{
 }
 .show-sidebar{
   right:0;
-  transition: ease-in 1.2s;
+  transition: ease-in .7s;
   /* transform: translate(-100vw); */
 }
 
@@ -1029,6 +1032,79 @@ h5{
 #but:hover{
   color:coral;
 }
+.container__realisations{
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.7rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 1px solid cadetblue; */
+}
+/* .container__realisations__content{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid cadetblue;
+} */
+.cards__realisations{
+  width: 340px;
+  height: 250px;
+  border-radius: 0.4rem;
+  border: 1px solid cadetblue;
+}
+.cards__realisations img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+.real_dis{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main--part--detail--realisations{
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.detail--cards{
+  width: 330px;
+  height: 200px;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.detail--cards img{
+  width: 100%;
+  height: 100%;
+}
+.container__real__header{
+  width: 100%;
+  height: 200px;
+  background-image: url('https://images.unsplash.com/photo-1522431266699-83e4a2a82b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+  background-position: center;
+  /* border: 1px solid coral; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__real__header__content{
+  width: 70%;
+  height: 80%;
+  border-bottom: 1px solid coral;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
 
 @media only screen and (max-width:575px){
 
@@ -1037,6 +1113,9 @@ h5{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  nav{
+    margin-left: 1rem;
   }
   video{
     position: absolute;
@@ -1200,7 +1279,21 @@ h5{
   text-align: center;
   font-weight: bold;
 }
-
+.project--name{
+  width: 100%;
+  margin-left: 0.7rem;
+  /* border-bottom: 1px solid gainsboro; */
+ }
+ .cards__realisations{
+  width: 330px;
+  height: 200px;
+  border-radius: 0.7rem;
+  border: 1px solid cadetblue;
+}
+.real_dis{
+  height: 30vh;
+  position: relative;
+}
 .container--home{
   display: block;
 }

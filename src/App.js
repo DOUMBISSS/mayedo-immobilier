@@ -9,6 +9,8 @@ import 'animate.css';
 import DetailsProject from './Pages/DetailsProject';
 import Concierge from './Pages/Concierge';
 import Services from './Pages/Services';
+import Realisations from './Pages/Realisations';
+import DetailsRea from './Pages/DetailsRea';
 
 
 
@@ -23,6 +25,8 @@ export default function App() {
     <Route path='/detail' element={<DetailsProject/>} />
     <Route path='/conciergerie' element={<Concierge/>} />
     <Route path='/services' element={<Services/>} />
+    <Route path='/Nos--realisations' element={<Realisations/>} />
+    <Route path='/detail/realisation1' element={<DetailsRea/>} />
   </Routes>
   );
 }
