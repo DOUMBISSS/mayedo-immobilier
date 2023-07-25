@@ -16,11 +16,13 @@ export default function Realisations () {
               </div>
               <div className='container'>
                         <div className='container__realisations'>
-                            {/* <div className='container__realisations__content'> */}
                                     <div className='cards__realisations'>
                                         <Link to='/detail/realisation1'><img src="mc.JPG" alt="" /></Link>
                                     </div>
-                            {/* </div> */}
+                                    <div className='cards__realisations'>
+                                        <Link to='/detail/realisation1'><img src="41.jpg" alt="" /></Link>
+                                    </div>
+                           
                         </div>
               </div>
         <Footer/>
